@@ -1,0 +1,234 @@
+<?php
+
+
+
+?>
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог</title>
+      <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <script src="../js/jquery-3.6.3.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="ellips el-first"></div>
+
+
+    <div class="ellips el-fourth"></div>
+
+    <div class="block">
+      <header class="header container">
+        <div class="header-top">
+          <div class="header__burger">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <mask
+                id="mask0_113_387"
+                style="mask-type: alpha"
+                maskUnits="userSpaceOnUse"
+                x="0"
+                y="0"
+                width="20"
+                height="20"
+              >
+                <rect width="20" height="20" fill="url(#pattern0)" />
+              </mask>
+              <g mask="url(#mask0_113_387)">
+                <rect
+                  x="-2.5"
+                  y="-2.5"
+                  width="30"
+                  height="31.25"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <pattern
+                  id="pattern0"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_113_387"
+                    transform="scale(0.00195312)"
+                  />
+                </pattern>
+                <image
+                  id="image0_113_387"
+                  width="512"
+                  height="512"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+          </div>
+          <div class="header__logo">
+            <a href="../index.html"><img src="../img/logo1.svg" alt="Логотип" /></a>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav__list">
+              <li class="list-item ">
+                <a href="../index.html">О&nbsp;нас</a>
+              </li>
+              <li class="list-item "><a href="../services.html">Услуги</a></li>
+              <li class="list-item list-item-active"><a href="../catalog.html">Каталог</a></li>
+              <li class="list-item"><a href="../contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <nav class="header__nav-burger">
+            <button class="nav__close">
+                <img src="../img/close.png" alt="">
+              </button>
+            <ul class="header__nav__list header__nav__list-burger">
+              <li class="list-item">
+                <a href="../index.html">О&nbsp;нас</a>
+              </li>
+              <li class="list-item"><a href="../services.html">Услуги</a></li>
+              <li class="list-item list-item-active"><a href="../catalog.html">Каталог</a></li>
+              <li class="list-item"><a href="../contacts.html">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="header__button">
+            <button class="header__button_btn btn feedback">Заказать звонок</button>
+          </div>
+        </div>
+
+        <div class="header__bottom">
+          <div class="header__stok">
+            <div class="header__stok_img">
+              <img src="../img/present-head.png" alt="" />
+            </div>
+            <div class="header__stok_text">
+              <p class="reason">
+                В честь своего открытия мы дарим всем клиентам подарки
+              </p>
+              <p class="timer">До конца акции осталось:</p>
+            </div>
+          </div>
+          <div class="header__timer">
+            <p class="header__timer_monitor">
+              <b id="days">27</b> <span>д.</span>:<b id="hours">27</b> <span>ч.</span>:<b id="minutes">27</b> <span>м.</span>:<b id="seconds">27</b>
+              <span>сек.</span>
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+      <?php $status =  $_GET['brend']; ?>
+      <br>
+      <?php
+
+      $arr['id'] = $_POST['id'];
+
+
+      require 'connect.php';
+
+
+        global $db;
+        $currentArr = [];
+
+      $resAuto = mysqli_query($db, "SELECT * FROM auto WHERE `status` = 'С пробегом'");
+      $dataAuto = mysqli_fetch_all($resAuto);
+//      print_r($dataAuto);
+      ?>
+
+        <section class="access container">
+            <div class="brend__card">
+                <h2 class="title-brend-once"><?php echo $currentArr[1]; ?></h2>
+                <img src=" <?php echo $currentArr[2]; ?>" alt="">
+            </div>
+            <h3 class="country">Автомобили с пробегом</h3>
+
+            <div class="brend">
+
+              <?php
+                foreach ($dataAuto as $values) {?>
+                    <div class="brend__card card-car" >
+                        <div class="brend__card_item" >
+                              <img src = "<?php echo $values[2]; ?>" alt = "Фото автомобиля" >
+                      </div>
+                        <h3><?php echo $values[1]; ?></h3>
+                        <h4 class="h4-price">Цена от <?php echo $values[6]; ?> рублей</h4>
+
+                        <a href="/php/once-car.php?id=<?php echo $values[0]; ?>" id="<?php echo $values[0]; ?>" class="header__button_btn btn detail">Подробнее</a>
+                    </div >
+                <?php }     ;  ?>
+
+          </div>
+
+            <p class="out"></p>
+        </section>
+
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-block">
+            <div class="footer__logo">
+                <div class="footer__logo_link">
+                    <img src="../img/logo1.svg" alt="">
+                </div>
+                <div class="footer__logo_social">
+                    <a href="https://wa.me/79876436715" target="_blank">
+                        <img class="whatsapp" src="../img/whatsapp.svg" alt="">
+                    </a>
+                    <a href="https://t.me/79876436715" target="_blank">
+                        <img class="telegram" src="../img/telegram.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__contacts">
+                <p class="footer__contacts_text">Звонок по России бесплатный</p>
+                <p class="footer__tel">
+                    <a class="footer__tel_number" href="tel:+79876436715">+7 (987) 643-67-15</a>
+                </p>
+                <div class="header__button">
+                    <button class="header__button_btn btn feedback">Перезвоните мне</button>
+                </div>
+            </div>
+        </div>
+      </footer>
+
+<?php
+
+
+
+?>
+      <section class="modal">
+        <div class="modal-wrap">
+          <div class="close-modal"><img class="close-modal-img" src="../img/close-modal.svg" alt="Закрыть"></div>
+          <h2 class="modal-title">Введите свои контактные данные</h2>
+          <p class="modal-text">Вам перезвонит первый освободившийся сотрудник</p>
+          <form class="form_modal_window" action="">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <input type="phone" name="phone" placeholder="Ваш телефон" required>
+            <input class="form_sub" name="sub" type="submit" value="ОТПРАВИТЬ">
+          </form>
+          <div id="erconts"></div>
+        </div>
+      </section>
+      
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
